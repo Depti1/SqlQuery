@@ -1,0 +1,10 @@
+select last_name ,count(*) from worker group by LAST_NAME;
+select department , min(salary) from worker group by department;
+select department , count(*)  from worker group by department having count(DEPARTMENT)>2;
+alter table worker add age int not null;
+alter table worker modify first_name char(50);
+alter table worker change column age  worker_age varchar(100);
+alter table worker drop column worker_age;
+alter table worker add age int not null;
+alter table worker add address varchar(20);
+alter table worker drop column age;

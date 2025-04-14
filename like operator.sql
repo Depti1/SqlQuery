@@ -1,0 +1,1 @@
+select FIRST_NAME from worker where first_name LIKE 'h_r%';
